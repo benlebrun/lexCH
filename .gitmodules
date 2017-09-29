@@ -1,0 +1,3 @@
+[submodule "sensegram"]
+	path = sensegram
+	url = https://github.com/tudarmstadt-lt/sensegram.git
