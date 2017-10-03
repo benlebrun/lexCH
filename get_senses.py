@@ -39,10 +39,7 @@ if __name__ == "__main__":
     sys.stderr = codecs.getwriter('UTF-8')(sys.stderr)
     sys.stout = codecs.getwriter('UTF-8')(sys.stdout)
     sys.stdin = codecs.getreader('UTF-8')(sys.stdin)
- 
-    args = parse_command_line()
-    tree = etree.parse(args.input)
-    
+     
     config = configParser = ConfigParser.RawConfigParser()
     config.read('config.ini')
     sv = sensegram.SenseGram.load_word2vec_format(config.get('lexCH', 'senses'), binary=True)
@@ -50,10 +47,13 @@ if __name__ == "__main__":
     wsd_model = sensegram.WSD(sv, wv, window=5, method='sim', filter_ctx=3)
     stopW = set(word.strip().lower() for word in codecs.open(config.get('lexCH', 'stopw'), 'r', 'utf8'))
 
+    args = parse_command_line()
+    tree = etree.parse(args.input)
     root = tree.getroot()
+    srctest = root[0]
+    
     out_root = etree.Element('senses')
     out_root.attrib["fileid"] = root.attrib['fileid'] 
-    srctest = root[0]
         
     for d_i, doci in enumerate(srctest):
         doc = etree.SubElement(out_root, 'doc')
