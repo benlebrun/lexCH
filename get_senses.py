@@ -58,9 +58,9 @@ if __name__ == "__main__":
     for d_i, doci in enumerate(srctest):
         doc = etree.SubElement(out_root, 'doc')
         doc.attrib["docid"] = doci.attrib["docid"]
-        for child in doci:
+        for seg in doci:
             index = 0
-            snt = child.text
+            snt = seg.text
             words = []
             if not snt is None:
                 words = snt.rstrip().split()
@@ -77,8 +77,8 @@ if __name__ == "__main__":
                     continue
                 snt_senses.append(word+"#"+sense[0].split("#")[1])
 
-            seg = etree.SubElement(doc, 'seg')
-            seg.text = ' '.join(snt_senses)
-            seg.attrib["segid"] = str(child.attrib["segid"])
+            out_seg = etree.SubElement(doc, 'seg')
+            out_seg.text = ' '.join(snt_senses)
+            out_seg.attrib["segid"] = str(seg.attrib["segid"])
             
     args.output.write(etree.tostring(out_root, encoding="utf-8", xml_declaration=True, pretty_print=True))
