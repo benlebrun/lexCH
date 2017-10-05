@@ -45,17 +45,17 @@ if __name__ == "__main__":
     sv = sensegram.SenseGram.load_word2vec_format(config.get('lexCH', 'senses'), binary=True)
     wv = gensim.models.Word2Vec.load_word2vec_format(config.get('lexCH', 'words'), binary=True)
     wsd_model = sensegram.WSD(sv, wv, window=5, method='sim', filter_ctx=3)
-    stopW = set(word.strip().lower() for word in codecs.open(config.get('lexCH', 'stopw'), 'r', 'utf8'))
+    stopW = set(word.strip().lower() for word in codecs.open(config.get('lexCH', 'stopw'), 'r', 'utf-8'))
 
     args = parse_command_line()
     tree = etree.parse(args.input)
     root = tree.getroot()
-    srctest = root[0]
+    src = root[0]
     
     out_root = etree.Element('senses')
     out_root.attrib["fileid"] = root.attrib['fileid'] 
         
-    for d_i, doci in enumerate(srctest):
+    for d_i, doci in enumerate(src):
         doc = etree.SubElement(out_root, 'doc')
         doc.attrib["docid"] = doci.attrib["docid"]
         for seg in doci:
