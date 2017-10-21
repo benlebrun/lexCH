@@ -5,6 +5,12 @@
 EXAMPLE COMMANDS AND USAGE INFORMATION
 --------------------------------------
 
+python get_senses.py < test/newstest2011.short.de.xml > test/newstest2011.short.senses.xml
+
+python lexCH.py -s test/newstest2011.short.senses.xml -i test/newstest2011.short.de.xml -o test/newstest2011.chains.xml
+
+mmax-import/mmax-xml-import.sh test/newstest2011.chains.xml mmax_chains
+
 
 PUBLICATIONS
 ------------

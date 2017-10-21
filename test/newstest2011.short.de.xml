@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE mteval SYSTEM "ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-xml-v1.3.dtd">
+<mteval fileid="newstest2011-src.de.sgm">
+  <srcset setid="test_set" srclang="German">
+    <doc docid="aktualne.cz-2010-12-02-60919">
+      <seg segid="1">Die Regierung will die Folter von &amp;quot; Hexen &amp;quot; unterbinden und gab eine Broschüre heraus</seg>
+      <seg segid="2">Frauen , die in Burkina Faso zu Hexen abgestempelt werden , weisen in der Regel einige gemeinsame gesellschaftliche Merkmale auf .</seg>
+      <seg segid="3">Sie gehören eher der älteren Generation an , sie finden keine Arbeit - zum Beispiel aus gesundheitlichen Gründen , sie sind ledig und haben keine Kinder .</seg>
+      <seg segid="4">Wenn eine dieser Frauen zur Hexe &amp;quot; wird &amp;quot; , wird sie streng isoliert , damit sie dem Rest des Dorfes nicht gefährlich werden kann .</seg>
+      <seg segid="5">&amp;quot; Männer sind von diesem Schicksal recht selten betroffen &amp;quot; .</seg>
+      <seg segid="6">&amp;quot; Auch jungen und gesunden Frauen bleibt dies erspart , da sie bei der Arbeit mithelfen und Kinder gebären &amp;quot; , beschreibt eine Ordensschwester die Situation , die sich in der Hauptstadt des westafrikanischen Staates Burkina Faso in einem Spezialheim um mehr als einhundert Frauen kümmert , die von ihren Gemeinschaften ausgestoßen wurden .</seg>
+      <seg segid="7">Die Ortsregierung entschloss nun , gegen diese abnorme &amp;quot; Sozialmaßnahme &amp;quot; vorzugehen .</seg>
+      <seg segid="8">Und gab aus diesem Grund eine Broschüre heraus , die die &amp;quot; Hexenverfolgung &amp;quot; unterbinden soll .</seg>
+      <seg segid="9">Die Sache hat aber einen Haken .</seg>
+      <seg segid="10">&amp;quot; Mehr als 70 Prozent aller Erwachsenen in Burkina Faso können nicht lesen &amp;quot; , wies die Zeitung &amp;quot; derStandard &amp;quot; auf das Dilemma der schriftlichen Aufklärung hin .</seg>
+      <seg segid="11">Der Hexerei bezichtigt zu werden ist aber auch in anderen afrikanischen Ländern gang und gäbe .</seg>
+      <seg segid="12">In Ghana , dem Nachbarland von Burkina Faso , wurde die 27 @-@ jährige Ammy Hemmahová von drei Frauen und zwei Männern zu Tode gefoltert - sie übergossen sie mit Petroleum und zündeten sie einfach an .</seg>
+      <seg segid="13">Über diesen Vorfall berichtete u.a. auch der Server BBC .</seg>
+      <seg segid="14">Die Täter behaupteten allerdings , die Sache wäre nur ein Zusammentreffen unglücklicher Umstände gewesen .</seg>
+      <seg segid="15">Ihrer Version zufolge sei Öl entflammt , das zu rituellen Salbungen verwendet werde .</seg>
+      <seg segid="16">Und zwar , nachdem die Gruppe versucht habe , &amp;quot; einen bösen Geist &amp;quot; aus der Frau &amp;quot; auszutreiben &amp;quot; .</seg>
+      <seg segid="17">Die Isolation von &amp;quot; Hexen &amp;quot; unterstützen die Menschen hier ohne Rücksicht auf ihre Bildung .</seg>
+      <seg segid="18">&amp;quot; Der Standard &amp;quot; zitierte hierzu einen 42 @-@ jährigen Unternehmer aus Burkina Faso : &amp;quot; Fresserinnen menschlicher Seelen sind früher wie heute eine Gefahr &amp;quot; , sagte er .</seg>
+      <seg segid="19">Während sich die Regierung in Burkina Faso wenigstens darum bemüht , die Hexenjagd zu entschärfen , hat der gambianische Präsident im vergangenen Jahr der Präsident selbst ordentlich mitgemischt .</seg>
+      <seg segid="20">&amp;quot; Präsident Yahya Jammeh entfachte nach dem Tod seiner Tante eine monströse Hexenjagd , da diese angeblich Anteil an deren Tode hatten und nun versuchen würden , auch den Präsidenten selbst durch schwarze Magie umzubringen &amp;quot; .</seg>
+      <seg segid="21">&amp;quot; Dazu rief er Schamane aus dem nahen Guinea zu Hilfe , die in Begleitung von Polizisten , Soldaten und der Leibgarde des Präsidenten wahllos festgenommene Frauen und Männer gewaltsam aus gambianischen Dörfern entführten und auf die Farm des Präsidenten in Kanilai brachten &amp;quot; , führte die Organisation Amnesty International in ihrem Bericht an .</seg>
+      <seg segid="22">Auf der Farm wurden die eingekerkerten Menschen gezwungen , einen Absud aus Pflanzen mit halluzinogener Wirkung zu trinken , der aber auch Darm- und Nierenprobleme hervorrief .</seg>
+      <seg segid="23">Zwei der arretierten Menschen überlebten den Aufenthalt auf der Farm nicht .</seg>
+      <seg segid="24">Erst aufgrund des internationalen Drucks wurden die nahezu tausend Gefangene wieder freigelassen .</seg>
+    </doc>
+    <doc docid="aktualne.cz-2010-12-02-60935">
+      <seg segid="1">Die Architekten sahen ein - zum Büro gehört auch ein Kindergarten</seg>
+      <seg segid="2">Das Bürogebäude Avriopoint in Brno ist der neue Sitz des Unternehmens Arch.Design.</seg>
+      <seg segid="3">Aber wer würde hier schon einen Minikindergarten erwarten , mit allem was dazu gehört : farbenfrohen Wänden , kreativen Möbeln , einer Menge Spielzeug und sogar einen Minispielplatz auf der Außenterrasse .</seg>
+      <seg segid="4">Dieser Kindergarten steht seit vergangenem Jahr den Mitarbeitern von Arch.Design zur Verfügung .</seg>
+      <seg segid="5">Das Projektierungs- und Architekturbüro Arch.Design , aus dessen Ateliers eine ganze Reihe namhafter Brünner Bauten stammen , rechnete von den ersten Entwürfen für das neue Gebäude Avriopoint an mit den Räumlichkeiten für seinen Firmen @-@ Minikindergarten .</seg>
+      <seg segid="6">In weiser Voraussicht , denn die meisten seiner 90 Mitarbeiter ( innen ) sind im Babyboom @-@ Alter und der Firma ist daran gelegen , dass die Projektantinnen und Architektinnen so schnell wie möglich an ihren Arbeitsplatz zurückkehren .</seg>
+      <seg segid="7">Zusammen mit der Möglichkeit , verkürzt zu arbeiten , ist der Kindergarten ein weiterer Bonus , den Arch.Design seinen Beschäftigten im Konzept ihres Sozialprogrammes anzubieten hat .</seg>
+      <seg segid="8">Die Bauingenieurinnen und -architektinnen haben es so leichter , ihren anspruchsvollen Beruf und die Kinderfürsorge unter einen Hut zu bringen .</seg>
+      <seg segid="9">Der Minikindergarten ist eine ursprüngliche Idee der Mitarbeiter ( innen ) von Arch.Design und mit der Unterstützung des Managements gelang es ihnen Fördergelder der Europäischen Union und des Ministeriums für Arbeit und Soziales für ihr Projekt zu gewinnen .</seg>
+      <seg segid="10">Der betriebliche Minikindergarten wird durch das Operationsprogramm Humanressourcen und Beschäftigungspolitik aus Mitteln des Europäischen Sozialfonds und aus dem Staatsbudget der Tschechischen Republik finanziert .</seg>
+      <seg segid="11">Dank dieser Finanzierung ( Zuschüsse in Höhe von 2 , 8 Mio. CZK ) konnten die notwendigen Einrichtungen und die Ausstattung beschafft werden und für die Dauer von 2 Jahren ist für qualifiziertes Personal und für den Betrieb gesorgt .</seg>
+      <seg segid="12">Nach der Ausschöpfung der Fördermittel ( 2 Jahre ) ist die Gesellschaft Arch.Design verpflichtet , den Minikindergarten 3 weitere Jahre auf eigene Kosten weiter zu betreiben .</seg>
+      <seg segid="13">Die Vorbereitung dieses Projekts nahm ein ganzes Jahr in Anspruch , wobei die Gesellschaft Economy Rating bei der Antragsabwicklung tatkräftige Hilfe leistete .</seg>
+      <seg segid="14">Um die Kinder kümmert sich ganztätig qualifiziertes Personal - eine Krankenschwester und eine Kindergartenlehrerin , den Kindergarten können Kinder ohne altersmäßige Einschränkungen besuchen , obwohl die meisten von ihnen über drei Jahre alt sind .</seg>
+      <seg segid="15">Und da es hierbei um einen Mini @-@ Kindergarten geht , dürfen gleichzeitig nur 5 Kinder anwesend sein , allerdings wechseln sich den Tag über mehrere Kinder gegenseitig ab .</seg>
+      <seg segid="16">Der Kindergartenbetrieb ist flexibel auf den Bedarf der Eltern abgestimmt , die Kinder aller Mitarbeiter haben in Bezug auf die Nutzung des Kindergartens die gleichen Rechte - ohne Rücksicht auf die Firmenhierarchie und ihre jeweilige Position .</seg>
+      <seg segid="17">Obwohl es sich um individuelle Erziehung und Pflege handelt , ist der Programminhalt im Mini @-@ Kindergarten dennoch vergleichbar mit dem Rahmenprogramm der Vorschulbildung .</seg>
+      <seg segid="18">Die Kinder spielen hier nicht nur , vor allem wird ihnen ausgezeichneter Unterricht geboten - von grundlegenden Erkenntnissen bis hin zum Vorschulunterricht , nebenbei lernen sie auch noch Englisch .</seg>
+      <seg segid="19">Das Klassenzimmer ist nicht nur mit Spielzeug und kreativen Spielen , sondern auch mit einem Rechner ausgestattet , der den Kindern zur Verfügung steht .</seg>
+      <seg segid="20">Was mehr - die Anwesenheit von kleinen Kindern in der Firma trägt zu einem freundlichen und positiven Firmenmilieu bei .</seg>
+      <seg segid="21">Die Eltern können jederzeit einen Blick auf die Kinder werfen und so entfällt der Stress beim verspäteten Abholen der Kinder aus einem weit entfernten Kindergarten .</seg>
+      <seg segid="22">Die Eltern nutzen deshalb ihre Arbeitszeit produktiver .</seg>
+      <seg segid="23">Kein Wunder , dass sich hier auch natürliche und loyale Arbeitgeber @-@ Arbeitnehmer @-@ Beziehungen herausbilden .</seg>
+      <seg segid="24">Arch.Design reihte sich so unter die tschechischen Firmen ein , die bei der Anwerbung neuer Mitarbeiter deutliche Benefits bieten , die familienfreundlich sind und durch solche Programme ihr Personal- Marketing bestärken .</seg>
+    </doc>
+  </srcset>
+</mteval>
