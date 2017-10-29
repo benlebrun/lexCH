@@ -16,7 +16,7 @@ gensim>=0.13.1,<1.0
 EXAMPLE COMMANDS AND USAGE INFORMATION
 --------------------------------------
 
-To obtain the lexical chains from a document, you first need to prepare the document (i.e. tokenize, truecase...) and convert to XML file (see example ```test/newstest2011.short.de.xml```).
+To obtain the lexical chains from a document, you first need to prepare the document (i.e. tokenize, truecase...) and convert it to an XML file (see example ```test/newstest2011.short.de.xml```).
 
 Train a sense model using SenseGram and update the path to the generated word and sense vectors in ```config.ini```. The quality of the model will impact on the quality of the detected lexical chains. 
 
