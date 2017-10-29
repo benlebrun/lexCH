@@ -8,9 +8,9 @@ This program is free software; you can redistribute it and/or modify it under th
 
 REQUIREMENTS
 ------------
-The software was developed on Linux using Python 2.7 and a version of the SenseGram tool that requires:\\
-numpy\\
-pandas<=0.17.1\\
+The software was developed on Linux using Python 2.7 and a version of the SenseGram tool that requires:  
+numpy  
+pandas<=0.17.1  
 gensim>=0.13.1,<1.0
 
 EXAMPLE COMMANDS AND USAGE INFORMATION
