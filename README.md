@@ -1,6 +1,10 @@
 # lexCH - Lexical Chainer
 
+A tool to automatically obtain lexical chains from a document
 
+This is a project of the Computational Linguistics Group at the University of Zurich (http://www.cl.uzh.ch).
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation
 
 EXAMPLE COMMANDS AND USAGE INFORMATION
 --------------------------------------
