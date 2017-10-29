@@ -6,14 +6,21 @@ This is a project of the Computational Linguistics Group at the University of Zu
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation
 
+REQUIREMENTS
+------------
+The software was developed on Linux using Python 2.7 and a version of the SenseGram tool that requires:
+numpy
+pandas<=0.17.1
+gensim>=0.13.1,<1.0
+
 EXAMPLE COMMANDS AND USAGE INFORMATION
 --------------------------------------
 
-python get_senses.py < test/newstest2011.short.de.xml > test/newstest2011.short.senses.xml
+> python get_senses.py < test/newstest2011.short.de.xml > test/newstest2011.short.senses.xml
 
-python lexCH.py -s test/newstest2011.short.senses.xml -i test/newstest2011.short.de.xml -o test/newstest2011.chains.xml
+> python lexCH.py -s test/newstest2011.short.senses.xml -i test/newstest2011.short.de.xml -o test/newstest2011.chains.xml
 
-mmax-import/mmax-xml-import.sh test/newstest2011.chains.xml mmax_chains
+> mmax-import/mmax-xml-import.sh test/newstest2011.chains.xml mmax_chains
 
 
 PUBLICATIONS
