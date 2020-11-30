@@ -1,3 +1,5 @@
+Note: This code was refactored on November 29th, 2020. 
+
 # lexCH - Lexical Chainer
 
 A tool to automatically obtain lexical chains from a document.
