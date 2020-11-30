@@ -1,4 +1,4 @@
-Note: This code was refactored on November 29th, 2020. 
+Note: This code was refactored on November 29th, 2020. For the moment, it is still only compatible with python 2.
 
 # lexCH - Lexical Chainer
 
