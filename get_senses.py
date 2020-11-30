@@ -8,7 +8,8 @@ import operator
 from collections import defaultdict
 import argparse
 import sys
-import sensegram
+from sensegram import sensegram
+from sensegram import wsd
 import codecs
 from lxml import etree
 import string
@@ -43,8 +44,8 @@ if __name__ == "__main__":
     config = configParser = ConfigParser.RawConfigParser()
     config.read('config.ini')
     sv = sensegram.SenseGram.load_word2vec_format(config.get('lexCH', 'senses'), binary=True)
-    wv = gensim.models.Word2Vec.load_word2vec_format(config.get('lexCH', 'words'), binary=True)
-    wsd_model = sensegram.WSD(sv, wv, window=5, method='sim', filter_ctx=3)
+    wv = gensim.models.KeyedVectors.load_word2vec_format(config.get('lexCH', 'words'), binary=True)
+    wsd_model = wsd.WSD(sv, wv, window=5, method='sim', max_context_words=3)
     stopW = set(word.strip().lower() for word in codecs.open(config.get('lexCH', 'stopw'), 'r', 'utf-8'))
 
     args = parse_command_line()
@@ -53,11 +54,13 @@ if __name__ == "__main__":
     src = root[0]
     
     out_root = etree.Element('senses')
-    out_root.attrib["fileid"] = root.attrib['fileid'] 
+    #out_root.attrib["fileid"] = root.attrib['fileid'] 
+    out_root.set('fileid', root.attrib['fileid']) 
         
     for d_i, doci in enumerate(src):
         doc = etree.SubElement(out_root, 'doc')
-        doc.attrib["docid"] = doci.attrib["docid"]
+        doc.set('docid', doci.attrib["docid"])
+        #doc.attrib["docid"] = doci.attrib["docid"]
         for seg in doci:
             index = 0
             snt = seg.text
@@ -70,15 +73,19 @@ if __name__ == "__main__":
                     snt_senses.append(word)
                     index += (len(word) + +1)
                     continue
-                sense = wsd_model.dis_text(snt.lower(),word.lower(),index,index+len(word))
+                try:
+                    sense, _ = wsd_model._disambiguate(snt.lower(), word.lower(), index, index+len(word), False)
+                except UnicodeEncodeError:
+                    sense = None
                 index += (len(word) + 1)
                 if sense is None:
                     snt_senses.append(word)
                     continue
-                snt_senses.append(word+"#"+sense[0].split("#")[1])
+                snt_senses.append(word+"#"+sense.split("#")[1])
 
             out_seg = etree.SubElement(doc, 'seg')
             out_seg.text = ' '.join(snt_senses)
-            out_seg.attrib["segid"] = str(seg.attrib["segid"])
-            
-    args.output.write(etree.tostring(out_root, encoding="utf-8", xml_declaration=True, pretty_print=True))
+            #out_seg.attrib["segid"] = str(seg.attrib["segid"])
+            out_seg.set('segid', str(seg.attrib["segid"]))
+
+    args.output.write(etree.tostring(out_root, encoding="utf-8", xml_declaration=True))#, pretty_print=True))

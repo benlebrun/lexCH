@@ -13,7 +13,8 @@ import codecs
 import cPickle
 from lxml import etree
 import string
-import sensegram
+from sensegram import sensegram
+from sensegram import wsd
 import ConfigParser
 
 
@@ -146,21 +147,25 @@ def addToSpan(span, nodes):
     span.append(nodes)
 
     
-def similarity(w1, w2, model):
-    if w1.lower() in model.vocab and w2.lower() in model.vocab:
+def similarity(w1, w2, model, vocabulary):
+    if w1.lower() in vocabulary and w2.lower() in vocabulary:
         sim = model.similarity(w1.lower(), w2.lower())
         return sim
     return 0
 
 def isInChain(cand, span, model, snt_num, all_chains):
+    from itertools import chain
     chains = {}
     ini_rel = []
 
+    vocabulary = list(chain(*[[k.decode()+'#'+k2.decode() for k2,v2 in v.items()] for k,v in model.inventory.items()]))
+
     for snt in span:
-        snt_words = [n for n in snt if n.word.lower() in model.vocab]
+        snt_words = [n for n in snt if n.word.lower() in vocabulary]
+
         for n in snt_words:
             if n.idN < cand.idN:
-                sim = similarity(cand.word, n.word, model)
+                sim = similarity(cand.word, n.word, model, vocabulary)
                 if sim >= args.simt:
                     chains[n.idN] = {}
                     chains[n.idN]["node"] = n
@@ -276,10 +281,10 @@ if __name__ == "__main__":
 
     config = configParser = ConfigParser.RawConfigParser()
     config.read('config_local.ini')
-    stopW = set(word.strip().lower() for word in codecs.open(config.get('lexCH', 'stopw'), 'r', 'utf-8'))
-    model = sensegram.SenseGram.load_word2vec_format(config.get('lexCH', 'senses'), binary=True)
+    stopW = set(word.strip().lower() for word in open('../lex-models/stopwords.txt', 'r'))
+    model = sensegram.SenseGram.load_word2vec_format('../lex-models/ukwac.w2v.sense_vectors', binary=True)
 
-    tree = etree.parse(args.senses)
+    tree = etree.parse('xml_test_sense.xml')#etree.parse(args.senses)
     root = tree.getroot()
 
     srctree = etree.parse(args.input)
